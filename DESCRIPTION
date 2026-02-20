@@ -1,0 +1,29 @@
+Package: FuseSurv
+Type: Package
+Title: Targeted Data Fusion for Causal Survival Analysis
+Version: 0.1.0
+Authors@R: c(
+    person("Yi", "Liu", role = c("aut", "cre"),
+           email = "yi.liu.biostat@gmail.com")
+)
+Description: Provides tools for estimating treatment-specific survival curves
+    for a target site by borrowing information from multiple source sites under
+    data-sharing constraints. The package implements target-site-only,
+    density-ratio-adjusted local estimators, a federated weighting estimator that
+    adaptively combines source information, and a semiparametric efficient CCOD 
+    (CCOD: common conditional outcome distribution) estimator. Optional functions
+    return  additional contrasts such as risk difference, survival ratio, and 
+    restricted mean survival time.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    CFsurvival,
+    survSuperLearner,
+    SuperLearner,
+    dplyr,
+    glmnet,
+    caret,
+    stats
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
