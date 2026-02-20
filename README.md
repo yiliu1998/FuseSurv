@@ -53,7 +53,7 @@ results <- FuseSurv(data=dat.surv,
                     contrasts = c("RD", "SR", "RMST"))
 ```
 
-The `results` object contains the data analysis results on treatment-specific survival curves, risk difference, survival ratio and RMST. For example, one can load and view the treatment survival curves by the federated learning estimator below (the first 5 rows only): 
+The `results` object contains the data analysis results on treatment-specific survival curves, risk difference, survival ratio and RMST. For example, one can load and view the treatment survival curves by the federated learning estimator below (we display the first 5 rows only): 
 
 ```r
 results$curves$df.FED[1:5,]
