@@ -33,7 +33,7 @@ site[site%in%c("3","4","6","9")] <- "B"
 site[site%in%c("7","8","10")] <- "C"
 ```
 
-With definitions of these variables, we construct the following data frame and then apply the main function `FuseSurv()` to analyze the data. 
+With definitions of these variables, we construct the following data frame and then apply the main function `FuseSurv()` to analyze the data. Here, we set group A (defined in site variable above) as the target site, and B and C are source sites. Hence, below, we set `tgt.name="A"`. 
 
 ```r
 dat.surv <- data.frame(cbind(A, Y, Delta, X, site))
@@ -46,7 +46,7 @@ results <- FuseSurv(data=dat.surv,
                     event="Delta",
                     fit.times=1:5000,
                     eval.times=seq(30, 3700, by=45),
-                    prop.SL.library=c("SL.glm", "SL.mean"),
+                    prop.SL.library=c("SL.mean", "SL.glm"),
                     event.SL.library=c("survSL.km", "survSL.coxph"),
                     cens.SL.library=c("survSL.km", "survSL.coxph"),
                     return_contrasts = TRUE,
