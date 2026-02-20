@@ -33,6 +33,8 @@ site[site%in%c("3","4","6","9")] <- "B"
 site[site%in%c("7","8","10")] <- "C"
 ```
 
+### Data analysis using the main function `FuseSurv()`
+
 With definitions of these variables, we construct the following data frame and then apply the main function `FuseSurv()` to analyze the data. Here, we set group A (defined in site variable above) as the target site, and B and C are source sites. Hence, below, we set `tgt.name="A"`. 
 
 ```r
