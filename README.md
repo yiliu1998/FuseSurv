@@ -17,7 +17,7 @@ We use a publicy available dataset `flchain` in `survival` R package to demonstr
 
 ### Data pre-processing
 
-We first load the data from `survival` package, and defines outcome `Y`, treatment `A`, covariates `X` and site variable `site` below. For more details and background of this data analysis, please refer to Appendix C.2 of [Liu et al. (2026) (ICLR)](https://openreview.net/forum?id=aTxnsFFO7t). 
+We first load the data from `survival` package, and then define the outcome `Y`, treatment `A`, covariates `X` and site variable `site` below. For more details and background of this data analysis, please refer to Appendix C.2 of [Liu et al. (2026)](https://openreview.net/forum?id=aTxnsFFO7t). 
 
 ```r
 library(survival)
