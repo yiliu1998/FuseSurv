@@ -25,3 +25,8 @@ We use a publicy available data set `flchain` in `survival` R package to demonst
 Please cite the following papers if you use this package: 
 - Liu, Y., Levis, A. W., Zhu, K., Yang, S., Gilbert, P. B., & Han, L. (2026). Privacy-Protected Causal Survival Analysis Under Distribution Shift. Proceedings of the 14th International Conference on Learning Representations.
 - Liu, Y., Levis, A. W., Zhu, K., Yang, S., Gilbert, P. B., & Han, L. (2025). Targeted data fusion for causal survival analysis under distribution shift. arXiv preprint arXiv:2501.18798.
+
+## Contact
+
+Please email Yi Liu (yi.liu.biostat@gmail.com) if you have any questions for the package. 
+
