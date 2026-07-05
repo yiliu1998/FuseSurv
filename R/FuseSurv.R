@@ -226,9 +226,9 @@ TrtSurvCurve <- function(data,
 
     #### calculate counterfactual survivals
     S1 <- get.survival(Y=Y[pred.ind], Delta=Delta[pred.ind], A=A[pred.ind],
-                       fit.times=fit.times, S.hats=S.hats.1, G.hat=G.hats.1, g.hats=g.hats)
+                       fit.times=fit.times, S.hats=S.hats.1, G.hats=G.hats.1, g.hats=g.hats)
     S0 <- get.survival(Y=Y[pred.ind], Delta=Delta[pred.ind], A=1-A[pred.ind],
-                       fit.times=fit.times, S.hats=S.hats.0, G.hat=G.hats.0, g.hats=1-g.hats)
+                       fit.times=fit.times, S.hats=S.hats.0, G.hats=G.hats.0, g.hats=1-g.hats)
 
     theta.00 <- theta.00 + S0$surv[eval.ind]
     theta.01 <- theta.01 + S1$surv[eval.ind]
@@ -330,10 +330,10 @@ TrtSurvCurve <- function(data,
       G.hats.1 <- surv.pred.1$cens.SL.predict
 
       S1 <- get.survival(Y[pred.ind], Delta[pred.ind], A=A[pred.ind], R=r,
-                         fit.times=fit.times, S.hats=S.hats.1, G.hat=G.hats.1,
+                         fit.times=fit.times, S.hats=S.hats.1, G.hats=G.hats.1,
                          g.hats=g.hats, omega.hats=omega.hats)
       S0 <- get.survival(Y[pred.ind], Delta[pred.ind], A=1-A[pred.ind], R=r,
-                         fit.times=fit.times, S.hats=S.hats.0, G.hat=G.hats.0,
+                         fit.times=fit.times, S.hats=S.hats.0, G.hats=G.hats.0,
                          g.hats=1-g.hats, omega.hats=omega.hats)
 
       Aug.R1.mean[,r] <- Aug.R1.mean[,r] + S1$AUG.means[eval.ind]
@@ -346,9 +346,9 @@ TrtSurvCurve <- function(data,
       S.hats.1 <- surv.pred.1$event.SL.predict
 
       S1 <- get.survival(Y[pred.ind], Delta[pred.ind], A=A[pred.ind],
-                         fit.times=fit.times, S.hats=S.hats.1, G.hat=G.hats.1, g.hats=g.hats)
+                         fit.times=fit.times, S.hats=S.hats.1, G.hats=G.hats.1, g.hats=g.hats)
       S0 <- get.survival(Y[pred.ind], Delta[pred.ind], A=1-A[pred.ind],
-                         fit.times=fit.times, S.hats=S.hats.0, G.hat=G.hats.0, g.hats=1-g.hats)
+                         fit.times=fit.times, S.hats=S.hats.0, G.hats=G.hats.0, g.hats=1-g.hats)
 
       Aug.R1.mean.sour[,r] <- Aug.R1.mean.sour[,r] + S1$AUG.means[eval.ind]
       Aug.R0.mean.sour[,r] <- Aug.R0.mean.sour[,r] + S0$AUG.means[eval.ind]
@@ -493,9 +493,9 @@ TrtSurvCurve <- function(data,
 
     #### calculate counterfactual survivals (CCOD)
     S1 <- get.survival.CCOD(Y=Y[pred.ind], Delta=Delta[pred.ind], A=A[pred.ind], R=R[pred.ind],
-                            fit.times=fit.times, S.hats=S.hats.1, G.hat=G.hats.1, g.hats=g.hats, eta0.hats=eta0.hats)
+                            fit.times=fit.times, S.hats=S.hats.1, G.hats=G.hats.1, g.hats=g.hats, eta0.hats=eta0.hats)
     S0 <- get.survival.CCOD(Y=Y[pred.ind], Delta=Delta[pred.ind], A=1-A[pred.ind], R=R[pred.ind],
-                            fit.times=fit.times, S.hats=S.hats.0, G.hat=G.hats.0, g.hats=1-g.hats, eta0.hats=eta0.hats)
+                            fit.times=fit.times, S.hats=S.hats.0, G.hats=G.hats.0, g.hats=1-g.hats, eta0.hats=eta0.hats)
 
     IF.CCOD.1 <- rbind(IF.CCOD.1, S1$IF.vals[,eval.ind])
     IF.CCOD.0 <- rbind(IF.CCOD.0, S0$IF.vals[,eval.ind])
