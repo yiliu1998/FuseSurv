@@ -72,7 +72,7 @@ results$curves$df.FED[1:5,]
 
 Please cite the following papers if you use this package: 
 - Liu, Y., Levis, A. W., Zhu, K., Yang, S., Gilbert, P. B., & Han, L. (2026). Privacy-Protected Causal Survival Analysis Under Distribution Shift. Proceedings of the 14th International Conference on Learning Representations.
-- Liu, Y., Levis, A. W., Zhu, K., Yang, S., Gilbert, P. B., & Han, L. (2025). Targeted data fusion for causal survival analysis under distribution shift. arXiv preprint arXiv:2501.18798.
+- Liu, Y., Levis, A. W., Zhu, K., Yang, S., Gilbert, P. B., & Han, L. (2026). Targeted Data Fusion for Region-Specific Survival Effects in the AMP HIV Prevention Trials. arXiv preprint arXiv:2501.18798.
 
 ## Contact
 
